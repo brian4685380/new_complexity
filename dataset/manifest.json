@@ -1,0 +1,5153 @@
+{
+  "generate_sources": [
+    {
+      "label": "qwen",
+      "path": "/home/brianyuan/complexity/inference/qwen/generate_results"
+    },
+    {
+      "label": "nemotron253b",
+      "path": "/home/brianyuan/complexity/inference/nemotron/generate_results"
+    }
+  ],
+  "training_grouped_by_model": true,
+  "curriculum_input_rows": 1344,
+  "curriculum_rows": 1344,
+  "training_raw_rows_before_correctness_filter": 15784,
+  "training_input_rows": 7031,
+  "training_rows": 7031,
+  "curriculum_expected_rows_per_algorithm_length": 8,
+  "training_target_rows_per_algorithm_length": 32,
+  "training_expected_rows_per_algorithm_length": 32,
+  "inspection_field": "name",
+  "training_correctness_filter": {
+    "mode": "is_correct == True",
+    "raw_rows_before_correctness_filter": 15784,
+    "rows_after_correctness_filter": 7031,
+    "correct_rows_kept": 7031,
+    "incorrect_rows_dropped": 8753,
+    "missing_correctness_rows_dropped": 0
+  },
+  "training_rows_correct": 7031,
+  "training_rows_incorrect": 0,
+  "training_rows_missing_correctness": 0,
+  "curriculum_input_rows_per_algorithm": {
+    "binary_search": 80,
+    "coin_change": 80,
+    "covariance_matrix": 24,
+    "four_sum": 80,
+    "four_sum_closest": 80,
+    "four_sum_in_range": 80,
+    "inner_product": 80,
+    "knapsack": 80,
+    "lcs": 80,
+    "lis": 80,
+    "max_subarray": 80,
+    "merge_sort": 80,
+    "sliding_window_max": 80,
+    "sorting": 80,
+    "subset_sum": 80,
+    "three_sum_in_range": 80,
+    "two_sum_closest": 80,
+    "vector_mean": 40
+  },
+  "curriculum_rows_per_algorithm": {
+    "binary_search": 80,
+    "coin_change": 80,
+    "covariance_matrix": 24,
+    "four_sum": 80,
+    "four_sum_closest": 80,
+    "four_sum_in_range": 80,
+    "inner_product": 80,
+    "knapsack": 80,
+    "lcs": 80,
+    "lis": 80,
+    "max_subarray": 80,
+    "merge_sort": 80,
+    "sliding_window_max": 80,
+    "sorting": 80,
+    "subset_sum": 80,
+    "three_sum_in_range": 80,
+    "two_sum_closest": 80,
+    "vector_mean": 40
+  },
+  "curriculum_rows_per_algorithm_length": {
+    "binary_search:10": 8,
+    "binary_search:100": 8,
+    "binary_search:20": 8,
+    "binary_search:30": 8,
+    "binary_search:40": 8,
+    "binary_search:50": 8,
+    "binary_search:60": 8,
+    "binary_search:70": 8,
+    "binary_search:80": 8,
+    "binary_search:90": 8,
+    "coin_change:10": 8,
+    "coin_change:100": 8,
+    "coin_change:20": 8,
+    "coin_change:30": 8,
+    "coin_change:40": 8,
+    "coin_change:50": 8,
+    "coin_change:60": 8,
+    "coin_change:70": 8,
+    "coin_change:80": 8,
+    "coin_change:90": 8,
+    "covariance_matrix:10": 8,
+    "covariance_matrix:20": 8,
+    "covariance_matrix:30": 8,
+    "four_sum:10": 8,
+    "four_sum:100": 8,
+    "four_sum:20": 8,
+    "four_sum:30": 8,
+    "four_sum:40": 8,
+    "four_sum:50": 8,
+    "four_sum:60": 8,
+    "four_sum:70": 8,
+    "four_sum:80": 8,
+    "four_sum:90": 8,
+    "four_sum_closest:10": 8,
+    "four_sum_closest:100": 8,
+    "four_sum_closest:20": 8,
+    "four_sum_closest:30": 8,
+    "four_sum_closest:40": 8,
+    "four_sum_closest:50": 8,
+    "four_sum_closest:60": 8,
+    "four_sum_closest:70": 8,
+    "four_sum_closest:80": 8,
+    "four_sum_closest:90": 8,
+    "four_sum_in_range:10": 8,
+    "four_sum_in_range:100": 8,
+    "four_sum_in_range:20": 8,
+    "four_sum_in_range:30": 8,
+    "four_sum_in_range:40": 8,
+    "four_sum_in_range:50": 8,
+    "four_sum_in_range:60": 8,
+    "four_sum_in_range:70": 8,
+    "four_sum_in_range:80": 8,
+    "four_sum_in_range:90": 8,
+    "inner_product:10": 8,
+    "inner_product:100": 8,
+    "inner_product:20": 8,
+    "inner_product:30": 8,
+    "inner_product:40": 8,
+    "inner_product:50": 8,
+    "inner_product:60": 8,
+    "inner_product:70": 8,
+    "inner_product:80": 8,
+    "inner_product:90": 8,
+    "knapsack:10": 8,
+    "knapsack:100": 8,
+    "knapsack:20": 8,
+    "knapsack:30": 8,
+    "knapsack:40": 8,
+    "knapsack:50": 8,
+    "knapsack:60": 8,
+    "knapsack:70": 8,
+    "knapsack:80": 8,
+    "knapsack:90": 8,
+    "lcs:10": 8,
+    "lcs:100": 8,
+    "lcs:20": 8,
+    "lcs:30": 8,
+    "lcs:40": 8,
+    "lcs:50": 8,
+    "lcs:60": 8,
+    "lcs:70": 8,
+    "lcs:80": 8,
+    "lcs:90": 8,
+    "lis:10": 8,
+    "lis:100": 8,
+    "lis:20": 8,
+    "lis:30": 8,
+    "lis:40": 8,
+    "lis:50": 8,
+    "lis:60": 8,
+    "lis:70": 8,
+    "lis:80": 8,
+    "lis:90": 8,
+    "max_subarray:10": 8,
+    "max_subarray:100": 8,
+    "max_subarray:20": 8,
+    "max_subarray:30": 8,
+    "max_subarray:40": 8,
+    "max_subarray:50": 8,
+    "max_subarray:60": 8,
+    "max_subarray:70": 8,
+    "max_subarray:80": 8,
+    "max_subarray:90": 8,
+    "merge_sort:10": 8,
+    "merge_sort:100": 8,
+    "merge_sort:20": 8,
+    "merge_sort:30": 8,
+    "merge_sort:40": 8,
+    "merge_sort:50": 8,
+    "merge_sort:60": 8,
+    "merge_sort:70": 8,
+    "merge_sort:80": 8,
+    "merge_sort:90": 8,
+    "sliding_window_max:10": 8,
+    "sliding_window_max:100": 8,
+    "sliding_window_max:20": 8,
+    "sliding_window_max:30": 8,
+    "sliding_window_max:40": 8,
+    "sliding_window_max:50": 8,
+    "sliding_window_max:60": 8,
+    "sliding_window_max:70": 8,
+    "sliding_window_max:80": 8,
+    "sliding_window_max:90": 8,
+    "sorting:10": 8,
+    "sorting:100": 8,
+    "sorting:20": 8,
+    "sorting:30": 8,
+    "sorting:40": 8,
+    "sorting:50": 8,
+    "sorting:60": 8,
+    "sorting:70": 8,
+    "sorting:80": 8,
+    "sorting:90": 8,
+    "subset_sum:10": 8,
+    "subset_sum:100": 8,
+    "subset_sum:20": 8,
+    "subset_sum:30": 8,
+    "subset_sum:40": 8,
+    "subset_sum:50": 8,
+    "subset_sum:60": 8,
+    "subset_sum:70": 8,
+    "subset_sum:80": 8,
+    "subset_sum:90": 8,
+    "three_sum_in_range:10": 8,
+    "three_sum_in_range:100": 8,
+    "three_sum_in_range:20": 8,
+    "three_sum_in_range:30": 8,
+    "three_sum_in_range:40": 8,
+    "three_sum_in_range:50": 8,
+    "three_sum_in_range:60": 8,
+    "three_sum_in_range:70": 8,
+    "three_sum_in_range:80": 8,
+    "three_sum_in_range:90": 8,
+    "two_sum_closest:10": 8,
+    "two_sum_closest:100": 8,
+    "two_sum_closest:20": 8,
+    "two_sum_closest:30": 8,
+    "two_sum_closest:40": 8,
+    "two_sum_closest:50": 8,
+    "two_sum_closest:60": 8,
+    "two_sum_closest:70": 8,
+    "two_sum_closest:80": 8,
+    "two_sum_closest:90": 8,
+    "vector_mean:10": 8,
+    "vector_mean:20": 8,
+    "vector_mean:30": 8,
+    "vector_mean:40": 8,
+    "vector_mean:50": 8
+  },
+  "training_raw_rows_before_correctness_filter_per_algorithm": {
+    "coin_change": 654,
+    "four_sum": 648,
+    "four_sum_closest": 693,
+    "four_sum_in_range": 655,
+    "knapsack": 6023,
+    "lcs": 2441,
+    "lis": 1047,
+    "max_subarray": 689,
+    "sorting": 879,
+    "subset_sum": 747,
+    "three_sum_in_range": 644,
+    "two_sum_closest": 664
+  },
+  "training_input_rows_per_algorithm": {
+    "coin_change": 640,
+    "four_sum": 640,
+    "four_sum_closest": 640,
+    "four_sum_in_range": 640,
+    "knapsack": 390,
+    "lcs": 241,
+    "lis": 640,
+    "max_subarray": 640,
+    "sorting": 640,
+    "subset_sum": 640,
+    "three_sum_in_range": 640,
+    "two_sum_closest": 640
+  },
+  "training_rows_per_algorithm": {
+    "coin_change": 640,
+    "four_sum": 640,
+    "four_sum_closest": 640,
+    "four_sum_in_range": 640,
+    "knapsack": 390,
+    "lcs": 241,
+    "lis": 640,
+    "max_subarray": 640,
+    "sorting": 640,
+    "subset_sum": 640,
+    "three_sum_in_range": 640,
+    "two_sum_closest": 640
+  },
+  "training_rows_per_algorithm_length": {
+    "coin_change:10": 64,
+    "coin_change:100": 64,
+    "coin_change:20": 64,
+    "coin_change:30": 64,
+    "coin_change:40": 64,
+    "coin_change:50": 64,
+    "coin_change:60": 64,
+    "coin_change:70": 64,
+    "coin_change:80": 64,
+    "coin_change:90": 64,
+    "four_sum:10": 64,
+    "four_sum:100": 64,
+    "four_sum:20": 64,
+    "four_sum:30": 64,
+    "four_sum:40": 64,
+    "four_sum:50": 64,
+    "four_sum:60": 64,
+    "four_sum:70": 64,
+    "four_sum:80": 64,
+    "four_sum:90": 64,
+    "four_sum_closest:10": 64,
+    "four_sum_closest:100": 64,
+    "four_sum_closest:20": 64,
+    "four_sum_closest:30": 64,
+    "four_sum_closest:40": 64,
+    "four_sum_closest:50": 64,
+    "four_sum_closest:60": 64,
+    "four_sum_closest:70": 64,
+    "four_sum_closest:80": 64,
+    "four_sum_closest:90": 64,
+    "four_sum_in_range:10": 64,
+    "four_sum_in_range:100": 64,
+    "four_sum_in_range:20": 64,
+    "four_sum_in_range:30": 64,
+    "four_sum_in_range:40": 64,
+    "four_sum_in_range:50": 64,
+    "four_sum_in_range:60": 64,
+    "four_sum_in_range:70": 64,
+    "four_sum_in_range:80": 64,
+    "four_sum_in_range:90": 64,
+    "knapsack:10": 64,
+    "knapsack:20": 64,
+    "knapsack:30": 64,
+    "knapsack:40": 64,
+    "knapsack:50": 64,
+    "knapsack:60": 59,
+    "knapsack:70": 11,
+    "lcs:10": 64,
+    "lcs:20": 64,
+    "lcs:30": 64,
+    "lcs:40": 49,
+    "lis:10": 64,
+    "lis:100": 64,
+    "lis:20": 64,
+    "lis:30": 64,
+    "lis:40": 64,
+    "lis:50": 64,
+    "lis:60": 64,
+    "lis:70": 64,
+    "lis:80": 64,
+    "lis:90": 64,
+    "max_subarray:10": 64,
+    "max_subarray:100": 64,
+    "max_subarray:20": 64,
+    "max_subarray:30": 64,
+    "max_subarray:40": 64,
+    "max_subarray:50": 64,
+    "max_subarray:60": 64,
+    "max_subarray:70": 64,
+    "max_subarray:80": 64,
+    "max_subarray:90": 64,
+    "sorting:10": 64,
+    "sorting:100": 64,
+    "sorting:20": 64,
+    "sorting:30": 64,
+    "sorting:40": 64,
+    "sorting:50": 64,
+    "sorting:60": 64,
+    "sorting:70": 64,
+    "sorting:80": 64,
+    "sorting:90": 64,
+    "subset_sum:10": 64,
+    "subset_sum:100": 64,
+    "subset_sum:20": 64,
+    "subset_sum:30": 64,
+    "subset_sum:40": 64,
+    "subset_sum:50": 64,
+    "subset_sum:60": 64,
+    "subset_sum:70": 64,
+    "subset_sum:80": 64,
+    "subset_sum:90": 64,
+    "three_sum_in_range:10": 64,
+    "three_sum_in_range:100": 64,
+    "three_sum_in_range:20": 64,
+    "three_sum_in_range:30": 64,
+    "three_sum_in_range:40": 64,
+    "three_sum_in_range:50": 64,
+    "three_sum_in_range:60": 64,
+    "three_sum_in_range:70": 64,
+    "three_sum_in_range:80": 64,
+    "three_sum_in_range:90": 64,
+    "two_sum_closest:10": 64,
+    "two_sum_closest:100": 64,
+    "two_sum_closest:20": 64,
+    "two_sum_closest:30": 64,
+    "two_sum_closest:40": 64,
+    "two_sum_closest:50": 64,
+    "two_sum_closest:60": 64,
+    "two_sum_closest:70": 64,
+    "two_sum_closest:80": 64,
+    "two_sum_closest:90": 64
+  },
+  "training_rows_per_model_algorithm_length": {
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:coin_change:10": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:coin_change:100": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:coin_change:20": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:coin_change:30": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:coin_change:40": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:coin_change:50": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:coin_change:60": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:coin_change:70": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:coin_change:80": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:coin_change:90": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum:10": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum:100": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum:20": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum:30": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum:40": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum:50": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum:60": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum:70": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum:80": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum:90": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum_closest:10": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum_closest:100": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum_closest:20": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum_closest:30": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum_closest:40": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum_closest:50": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum_closest:60": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum_closest:70": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum_closest:80": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum_closest:90": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum_in_range:10": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum_in_range:100": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum_in_range:20": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum_in_range:30": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum_in_range:40": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum_in_range:50": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum_in_range:60": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum_in_range:70": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum_in_range:80": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum_in_range:90": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:knapsack:10": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:knapsack:20": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:knapsack:30": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:knapsack:40": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:knapsack:50": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:knapsack:60": 27,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:lcs:10": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:lcs:20": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:lcs:30": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:lcs:40": 17,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:lis:10": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:lis:100": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:lis:20": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:lis:30": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:lis:40": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:lis:50": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:lis:60": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:lis:70": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:lis:80": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:lis:90": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:max_subarray:10": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:max_subarray:100": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:max_subarray:20": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:max_subarray:30": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:max_subarray:40": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:max_subarray:50": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:max_subarray:60": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:max_subarray:70": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:max_subarray:80": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:max_subarray:90": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:sorting:10": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:sorting:100": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:sorting:20": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:sorting:30": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:sorting:40": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:sorting:50": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:sorting:60": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:sorting:70": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:sorting:80": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:sorting:90": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:subset_sum:10": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:subset_sum:100": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:subset_sum:20": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:subset_sum:30": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:subset_sum:40": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:subset_sum:50": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:subset_sum:60": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:subset_sum:70": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:subset_sum:80": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:subset_sum:90": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:three_sum_in_range:10": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:three_sum_in_range:100": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:three_sum_in_range:20": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:three_sum_in_range:30": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:three_sum_in_range:40": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:three_sum_in_range:50": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:three_sum_in_range:60": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:three_sum_in_range:70": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:three_sum_in_range:80": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:three_sum_in_range:90": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:two_sum_closest:10": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:two_sum_closest:100": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:two_sum_closest:20": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:two_sum_closest:30": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:two_sum_closest:40": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:two_sum_closest:50": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:two_sum_closest:60": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:two_sum_closest:70": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:two_sum_closest:80": 32,
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:two_sum_closest:90": 32,
+    "qwen_qwen_235b:coin_change:10": 32,
+    "qwen_qwen_235b:coin_change:100": 32,
+    "qwen_qwen_235b:coin_change:20": 32,
+    "qwen_qwen_235b:coin_change:30": 32,
+    "qwen_qwen_235b:coin_change:40": 32,
+    "qwen_qwen_235b:coin_change:50": 32,
+    "qwen_qwen_235b:coin_change:60": 32,
+    "qwen_qwen_235b:coin_change:70": 32,
+    "qwen_qwen_235b:coin_change:80": 32,
+    "qwen_qwen_235b:coin_change:90": 32,
+    "qwen_qwen_235b:four_sum:10": 32,
+    "qwen_qwen_235b:four_sum:100": 32,
+    "qwen_qwen_235b:four_sum:20": 32,
+    "qwen_qwen_235b:four_sum:30": 32,
+    "qwen_qwen_235b:four_sum:40": 32,
+    "qwen_qwen_235b:four_sum:50": 32,
+    "qwen_qwen_235b:four_sum:60": 32,
+    "qwen_qwen_235b:four_sum:70": 32,
+    "qwen_qwen_235b:four_sum:80": 32,
+    "qwen_qwen_235b:four_sum:90": 32,
+    "qwen_qwen_235b:four_sum_closest:10": 32,
+    "qwen_qwen_235b:four_sum_closest:100": 32,
+    "qwen_qwen_235b:four_sum_closest:20": 32,
+    "qwen_qwen_235b:four_sum_closest:30": 32,
+    "qwen_qwen_235b:four_sum_closest:40": 32,
+    "qwen_qwen_235b:four_sum_closest:50": 32,
+    "qwen_qwen_235b:four_sum_closest:60": 32,
+    "qwen_qwen_235b:four_sum_closest:70": 32,
+    "qwen_qwen_235b:four_sum_closest:80": 32,
+    "qwen_qwen_235b:four_sum_closest:90": 32,
+    "qwen_qwen_235b:four_sum_in_range:10": 32,
+    "qwen_qwen_235b:four_sum_in_range:100": 32,
+    "qwen_qwen_235b:four_sum_in_range:20": 32,
+    "qwen_qwen_235b:four_sum_in_range:30": 32,
+    "qwen_qwen_235b:four_sum_in_range:40": 32,
+    "qwen_qwen_235b:four_sum_in_range:50": 32,
+    "qwen_qwen_235b:four_sum_in_range:60": 32,
+    "qwen_qwen_235b:four_sum_in_range:70": 32,
+    "qwen_qwen_235b:four_sum_in_range:80": 32,
+    "qwen_qwen_235b:four_sum_in_range:90": 32,
+    "qwen_qwen_235b:knapsack:10": 32,
+    "qwen_qwen_235b:knapsack:20": 32,
+    "qwen_qwen_235b:knapsack:30": 32,
+    "qwen_qwen_235b:knapsack:40": 32,
+    "qwen_qwen_235b:knapsack:50": 32,
+    "qwen_qwen_235b:knapsack:60": 32,
+    "qwen_qwen_235b:knapsack:70": 11,
+    "qwen_qwen_235b:lcs:10": 32,
+    "qwen_qwen_235b:lcs:20": 32,
+    "qwen_qwen_235b:lcs:30": 32,
+    "qwen_qwen_235b:lcs:40": 32,
+    "qwen_qwen_235b:lis:10": 32,
+    "qwen_qwen_235b:lis:100": 32,
+    "qwen_qwen_235b:lis:20": 32,
+    "qwen_qwen_235b:lis:30": 32,
+    "qwen_qwen_235b:lis:40": 32,
+    "qwen_qwen_235b:lis:50": 32,
+    "qwen_qwen_235b:lis:60": 32,
+    "qwen_qwen_235b:lis:70": 32,
+    "qwen_qwen_235b:lis:80": 32,
+    "qwen_qwen_235b:lis:90": 32,
+    "qwen_qwen_235b:max_subarray:10": 32,
+    "qwen_qwen_235b:max_subarray:100": 32,
+    "qwen_qwen_235b:max_subarray:20": 32,
+    "qwen_qwen_235b:max_subarray:30": 32,
+    "qwen_qwen_235b:max_subarray:40": 32,
+    "qwen_qwen_235b:max_subarray:50": 32,
+    "qwen_qwen_235b:max_subarray:60": 32,
+    "qwen_qwen_235b:max_subarray:70": 32,
+    "qwen_qwen_235b:max_subarray:80": 32,
+    "qwen_qwen_235b:max_subarray:90": 32,
+    "qwen_qwen_235b:sorting:10": 32,
+    "qwen_qwen_235b:sorting:100": 32,
+    "qwen_qwen_235b:sorting:20": 32,
+    "qwen_qwen_235b:sorting:30": 32,
+    "qwen_qwen_235b:sorting:40": 32,
+    "qwen_qwen_235b:sorting:50": 32,
+    "qwen_qwen_235b:sorting:60": 32,
+    "qwen_qwen_235b:sorting:70": 32,
+    "qwen_qwen_235b:sorting:80": 32,
+    "qwen_qwen_235b:sorting:90": 32,
+    "qwen_qwen_235b:subset_sum:10": 32,
+    "qwen_qwen_235b:subset_sum:100": 32,
+    "qwen_qwen_235b:subset_sum:20": 32,
+    "qwen_qwen_235b:subset_sum:30": 32,
+    "qwen_qwen_235b:subset_sum:40": 32,
+    "qwen_qwen_235b:subset_sum:50": 32,
+    "qwen_qwen_235b:subset_sum:60": 32,
+    "qwen_qwen_235b:subset_sum:70": 32,
+    "qwen_qwen_235b:subset_sum:80": 32,
+    "qwen_qwen_235b:subset_sum:90": 32,
+    "qwen_qwen_235b:three_sum_in_range:10": 32,
+    "qwen_qwen_235b:three_sum_in_range:100": 32,
+    "qwen_qwen_235b:three_sum_in_range:20": 32,
+    "qwen_qwen_235b:three_sum_in_range:30": 32,
+    "qwen_qwen_235b:three_sum_in_range:40": 32,
+    "qwen_qwen_235b:three_sum_in_range:50": 32,
+    "qwen_qwen_235b:three_sum_in_range:60": 32,
+    "qwen_qwen_235b:three_sum_in_range:70": 32,
+    "qwen_qwen_235b:three_sum_in_range:80": 32,
+    "qwen_qwen_235b:three_sum_in_range:90": 32,
+    "qwen_qwen_235b:two_sum_closest:10": 32,
+    "qwen_qwen_235b:two_sum_closest:100": 32,
+    "qwen_qwen_235b:two_sum_closest:20": 32,
+    "qwen_qwen_235b:two_sum_closest:30": 32,
+    "qwen_qwen_235b:two_sum_closest:40": 32,
+    "qwen_qwen_235b:two_sum_closest:50": 32,
+    "qwen_qwen_235b:two_sum_closest:60": 32,
+    "qwen_qwen_235b:two_sum_closest:70": 32,
+    "qwen_qwen_235b:two_sum_closest:80": 32,
+    "qwen_qwen_235b:two_sum_closest:90": 32
+  },
+  "training_rows_per_model": {
+    "nvdev_nvidia_llama-3.1-nemotron-ultra-253b-v1": 3500,
+    "nvdev_qwen_qwen-235b": 3531
+  },
+  "training_rows_per_model_family": {
+    "nemotron253b": 3500,
+    "qwen": 3531
+  },
+  "training_rows_per_model_key": {
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1": 3500,
+    "qwen_qwen_235b": 3531
+  },
+  "training_rows_per_model_size": {
+    "235b": 3531,
+    "253b": 3500
+  },
+  "training_models": {
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1": {
+      "model_family": "nemotron253b",
+      "model_size": "253b",
+      "model_names": [
+        "nvdev/nvidia/llama-3.1-nemotron-ultra-253b-v1"
+      ],
+      "model_dirs": [
+        "nvdev_nvidia_llama-3.1-nemotron-ultra-253b-v1"
+      ],
+      "rows": 3500
+    },
+    "qwen_qwen_235b": {
+      "model_family": "qwen",
+      "model_size": "235b",
+      "model_names": [
+        "nvdev/qwen/qwen-235b"
+      ],
+      "model_dirs": [
+        "nvdev_qwen_qwen-235b"
+      ],
+      "rows": 3531
+    }
+  },
+  "curriculum_input_pair_stats": {
+    "binary_search:10": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "binary_search:20": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "binary_search:30": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "binary_search:40": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "binary_search:50": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "binary_search:60": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "binary_search:70": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "binary_search:80": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "binary_search:90": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "binary_search:100": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "coin_change:10": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "coin_change:20": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "coin_change:30": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "coin_change:40": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "coin_change:50": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "coin_change:60": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "coin_change:70": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "coin_change:80": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "coin_change:90": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "coin_change:100": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "covariance_matrix:10": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "covariance_matrix:20": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "covariance_matrix:30": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum:10": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum:20": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum:30": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum:40": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum:50": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum:60": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum:70": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum:80": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum:90": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum:100": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_closest:10": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_closest:20": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_closest:30": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_closest:40": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_closest:50": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_closest:60": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_closest:70": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_closest:80": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_closest:90": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_closest:100": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_in_range:10": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_in_range:20": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_in_range:30": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_in_range:40": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_in_range:50": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_in_range:60": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_in_range:70": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_in_range:80": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_in_range:90": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_in_range:100": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "inner_product:10": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "inner_product:20": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "inner_product:30": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "inner_product:40": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "inner_product:50": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "inner_product:60": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "inner_product:70": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "inner_product:80": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "inner_product:90": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "inner_product:100": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "knapsack:10": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "knapsack:20": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "knapsack:30": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "knapsack:40": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "knapsack:50": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "knapsack:60": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "knapsack:70": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "knapsack:80": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "knapsack:90": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "knapsack:100": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "lcs:10": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "lcs:20": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "lcs:30": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "lcs:40": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "lcs:50": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "lcs:60": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "lcs:70": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "lcs:80": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "lcs:90": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "lcs:100": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "lis:10": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "lis:20": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "lis:30": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "lis:40": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "lis:50": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "lis:60": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "lis:70": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "lis:80": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "lis:90": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "lis:100": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "max_subarray:10": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "max_subarray:20": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "max_subarray:30": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "max_subarray:40": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "max_subarray:50": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "max_subarray:60": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "max_subarray:70": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "max_subarray:80": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "max_subarray:90": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "max_subarray:100": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "merge_sort:10": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "merge_sort:20": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "merge_sort:30": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "merge_sort:40": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "merge_sort:50": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "merge_sort:60": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "merge_sort:70": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "merge_sort:80": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "merge_sort:90": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "merge_sort:100": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "sliding_window_max:10": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "sliding_window_max:20": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "sliding_window_max:30": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "sliding_window_max:40": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "sliding_window_max:50": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "sliding_window_max:60": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "sliding_window_max:70": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "sliding_window_max:80": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "sliding_window_max:90": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "sliding_window_max:100": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "sorting:10": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "sorting:20": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "sorting:30": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "sorting:40": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "sorting:50": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "sorting:60": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "sorting:70": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "sorting:80": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "sorting:90": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "sorting:100": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "subset_sum:10": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "subset_sum:20": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "subset_sum:30": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "subset_sum:40": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "subset_sum:50": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "subset_sum:60": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "subset_sum:70": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "subset_sum:80": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "subset_sum:90": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "subset_sum:100": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "three_sum_in_range:10": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "three_sum_in_range:20": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "three_sum_in_range:30": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "three_sum_in_range:40": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "three_sum_in_range:50": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "three_sum_in_range:60": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "three_sum_in_range:70": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "three_sum_in_range:80": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "three_sum_in_range:90": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "three_sum_in_range:100": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "two_sum_closest:10": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "two_sum_closest:20": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "two_sum_closest:30": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "two_sum_closest:40": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "two_sum_closest:50": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "two_sum_closest:60": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "two_sum_closest:70": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "two_sum_closest:80": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "two_sum_closest:90": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "two_sum_closest:100": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "vector_mean:10": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "vector_mean:20": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "vector_mean:30": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "vector_mean:40": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "vector_mean:50": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    }
+  },
+  "training_input_pair_stats": {
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:coin_change:10": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:coin_change:10": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:coin_change:20": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:coin_change:20": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:coin_change:30": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:coin_change:30": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:coin_change:40": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:coin_change:40": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:coin_change:50": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 18,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:coin_change:50": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:coin_change:60": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:coin_change:60": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:coin_change:70": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:coin_change:70": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:coin_change:80": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:coin_change:80": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:coin_change:90": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 19,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:coin_change:90": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:coin_change:100": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:coin_change:100": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 19,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum:10": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:four_sum:10": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 19,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum:20": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:four_sum:20": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum:30": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:four_sum:30": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 19,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum:40": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:four_sum:40": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum:50": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:four_sum:50": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum:60": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:four_sum:60": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum:70": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:four_sum:70": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum:80": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:four_sum:80": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum:90": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:four_sum:90": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum:100": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:four_sum:100": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum_closest:10": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 18,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:four_sum_closest:10": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum_closest:20": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 18,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:four_sum_closest:20": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum_closest:30": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 19,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:four_sum_closest:30": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum_closest:40": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 19,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:four_sum_closest:40": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum_closest:50": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 19,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:four_sum_closest:50": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum_closest:60": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:four_sum_closest:60": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum_closest:70": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:four_sum_closest:70": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum_closest:80": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:four_sum_closest:80": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum_closest:90": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 19,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:four_sum_closest:90": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum_closest:100": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:four_sum_closest:100": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum_in_range:10": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 19,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:four_sum_in_range:10": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum_in_range:20": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:four_sum_in_range:20": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 19,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum_in_range:30": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:four_sum_in_range:30": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum_in_range:40": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:four_sum_in_range:40": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum_in_range:50": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 19,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:four_sum_in_range:50": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum_in_range:60": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:four_sum_in_range:60": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum_in_range:70": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:four_sum_in_range:70": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 19,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum_in_range:80": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:four_sum_in_range:80": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum_in_range:90": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:four_sum_in_range:90": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:four_sum_in_range:100": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:four_sum_in_range:100": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:knapsack:10": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:knapsack:10": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 19,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:knapsack:20": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 16,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:knapsack:20": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 15,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:knapsack:30": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 18,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:knapsack:30": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 18,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:knapsack:40": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 15,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:knapsack:40": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 16,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:knapsack:50": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 13,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:knapsack:50": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 13,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:knapsack:60": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 27,
+      "output_rows": 27,
+      "input_distinct_names": 10,
+      "rows_missing_to_target": 5,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:knapsack:60": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 14,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:knapsack:70": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 11,
+      "output_rows": 11,
+      "input_distinct_names": 8,
+      "rows_missing_to_target": 21,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:lcs:10": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:lcs:10": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:lcs:20": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 19,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:lcs:20": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 18,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:lcs:30": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 13,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:lcs:30": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 16,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:lcs:40": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 17,
+      "output_rows": 17,
+      "input_distinct_names": 6,
+      "rows_missing_to_target": 15,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:lcs:40": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 9,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:lis:10": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 19,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:lis:10": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:lis:20": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 19,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:lis:20": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:lis:30": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:lis:30": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:lis:40": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 18,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:lis:40": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 19,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:lis:50": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 18,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:lis:50": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:lis:60": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 16,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:lis:60": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 19,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:lis:70": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 16,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:lis:70": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 18,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:lis:80": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 16,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:lis:80": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 17,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:lis:90": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 16,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:lis:90": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 17,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:lis:100": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 16,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:lis:100": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 18,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:max_subarray:10": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:max_subarray:10": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:max_subarray:20": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:max_subarray:20": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:max_subarray:30": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:max_subarray:30": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:max_subarray:40": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:max_subarray:40": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:max_subarray:50": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:max_subarray:50": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:max_subarray:60": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:max_subarray:60": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:max_subarray:70": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 19,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:max_subarray:70": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:max_subarray:80": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 19,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:max_subarray:80": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:max_subarray:90": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 18,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:max_subarray:90": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 18,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:max_subarray:100": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 19,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:max_subarray:100": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 19,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:sorting:10": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:sorting:10": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:sorting:20": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 19,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:sorting:20": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:sorting:30": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 19,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:sorting:30": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 19,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:sorting:40": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 19,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:sorting:40": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:sorting:50": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:sorting:50": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:sorting:60": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:sorting:60": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 19,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:sorting:70": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 18,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:sorting:70": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:sorting:80": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 19,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:sorting:80": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 18,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:sorting:90": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 18,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:sorting:90": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 16,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:sorting:100": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 15,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:sorting:100": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 15,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:subset_sum:10": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:subset_sum:10": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:subset_sum:20": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:subset_sum:20": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 19,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:subset_sum:30": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:subset_sum:30": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 19,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:subset_sum:40": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 18,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:subset_sum:40": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:subset_sum:50": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:subset_sum:50": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 19,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:subset_sum:60": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:subset_sum:60": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 18,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:subset_sum:70": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:subset_sum:70": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:subset_sum:80": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 18,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:subset_sum:80": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 19,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:subset_sum:90": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 18,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:subset_sum:90": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 19,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:subset_sum:100": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 18,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:subset_sum:100": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 17,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:three_sum_in_range:10": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:three_sum_in_range:10": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:three_sum_in_range:20": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:three_sum_in_range:20": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:three_sum_in_range:30": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:three_sum_in_range:30": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:three_sum_in_range:40": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:three_sum_in_range:40": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:three_sum_in_range:50": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:three_sum_in_range:50": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:three_sum_in_range:60": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 19,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:three_sum_in_range:60": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:three_sum_in_range:70": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:three_sum_in_range:70": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:three_sum_in_range:80": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:three_sum_in_range:80": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:three_sum_in_range:90": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:three_sum_in_range:90": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:three_sum_in_range:100": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:three_sum_in_range:100": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:two_sum_closest:10": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 19,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:two_sum_closest:10": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:two_sum_closest:20": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:two_sum_closest:20": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:two_sum_closest:30": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:two_sum_closest:30": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:two_sum_closest:40": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 19,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:two_sum_closest:40": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:two_sum_closest:50": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 19,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:two_sum_closest:50": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 19,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:two_sum_closest:60": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:two_sum_closest:60": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:two_sum_closest:70": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 19,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:two_sum_closest:70": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:two_sum_closest:80": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 19,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:two_sum_closest:80": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:two_sum_closest:90": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 19,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:two_sum_closest:90": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:two_sum_closest:100": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    },
+    "qwen_qwen_235b:two_sum_closest:100": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 32,
+      "output_rows": 32,
+      "input_distinct_names": 20,
+      "rows_missing_to_target": 0,
+      "rows_dropped": 0
+    }
+  },
+  "curriculum_flattened_name_stats": {
+    "binary_search:10": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "binary_search:20": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "binary_search:30": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "binary_search:40": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "binary_search:50": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "binary_search:60": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "binary_search:70": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "binary_search:80": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "binary_search:90": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "binary_search:100": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "coin_change:10": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "coin_change:20": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "coin_change:30": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "coin_change:40": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "coin_change:50": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "coin_change:60": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "coin_change:70": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "coin_change:80": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "coin_change:90": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "coin_change:100": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "covariance_matrix:10": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "covariance_matrix:20": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "covariance_matrix:30": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum:10": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum:20": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum:30": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum:40": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum:50": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum:60": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum:70": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum:80": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum:90": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum:100": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_closest:10": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_closest:20": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_closest:30": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_closest:40": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_closest:50": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_closest:60": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_closest:70": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_closest:80": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_closest:90": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_closest:100": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_in_range:10": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_in_range:20": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_in_range:30": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_in_range:40": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_in_range:50": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_in_range:60": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_in_range:70": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_in_range:80": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_in_range:90": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_in_range:100": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "inner_product:10": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "inner_product:20": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "inner_product:30": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "inner_product:40": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "inner_product:50": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "inner_product:60": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "inner_product:70": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "inner_product:80": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "inner_product:90": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "inner_product:100": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "knapsack:10": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "knapsack:20": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "knapsack:30": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "knapsack:40": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "knapsack:50": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "knapsack:60": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "knapsack:70": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "knapsack:80": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "knapsack:90": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "knapsack:100": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "lcs:10": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "lcs:20": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "lcs:30": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "lcs:40": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "lcs:50": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "lcs:60": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "lcs:70": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "lcs:80": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "lcs:90": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "lcs:100": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "lis:10": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "lis:20": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "lis:30": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "lis:40": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "lis:50": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "lis:60": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "lis:70": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "lis:80": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "lis:90": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "lis:100": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "max_subarray:10": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "max_subarray:20": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "max_subarray:30": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "max_subarray:40": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "max_subarray:50": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "max_subarray:60": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "max_subarray:70": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "max_subarray:80": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "max_subarray:90": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "max_subarray:100": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "merge_sort:10": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "merge_sort:20": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "merge_sort:30": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "merge_sort:40": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "merge_sort:50": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "merge_sort:60": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "merge_sort:70": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "merge_sort:80": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "merge_sort:90": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "merge_sort:100": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "sliding_window_max:10": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "sliding_window_max:20": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "sliding_window_max:30": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "sliding_window_max:40": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "sliding_window_max:50": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "sliding_window_max:60": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "sliding_window_max:70": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "sliding_window_max:80": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "sliding_window_max:90": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "sliding_window_max:100": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "sorting:10": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "sorting:20": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "sorting:30": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "sorting:40": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "sorting:50": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "sorting:60": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "sorting:70": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "sorting:80": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "sorting:90": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "sorting:100": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "subset_sum:10": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "subset_sum:20": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "subset_sum:30": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "subset_sum:40": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "subset_sum:50": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "subset_sum:60": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "subset_sum:70": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "subset_sum:80": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "subset_sum:90": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "subset_sum:100": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "three_sum_in_range:10": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "three_sum_in_range:20": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "three_sum_in_range:30": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "three_sum_in_range:40": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "three_sum_in_range:50": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "three_sum_in_range:60": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "three_sum_in_range:70": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "three_sum_in_range:80": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "three_sum_in_range:90": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "three_sum_in_range:100": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "two_sum_closest:10": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "two_sum_closest:20": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "two_sum_closest:30": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "two_sum_closest:40": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "two_sum_closest:50": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "two_sum_closest:60": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "two_sum_closest:70": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "two_sum_closest:80": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "two_sum_closest:90": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "two_sum_closest:100": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "vector_mean:10": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "vector_mean:20": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "vector_mean:30": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "vector_mean:40": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    },
+    "vector_mean:50": {
+      "inspection_field": "name",
+      "row_count": 8,
+      "unique_names": 8,
+      "duplicate_name_rows": 0
+    }
+  },
+  "training_flattened_name_stats": {
+    "coin_change:10": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "coin_change:20": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "coin_change:30": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "coin_change:40": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "coin_change:50": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "coin_change:60": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "coin_change:70": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "coin_change:80": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "coin_change:90": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "coin_change:100": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "four_sum:10": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "four_sum:20": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "four_sum:30": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "four_sum:40": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "four_sum:50": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "four_sum:60": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "four_sum:70": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "four_sum:80": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "four_sum:90": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "four_sum:100": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_closest:10": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_closest:20": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_closest:30": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_closest:40": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_closest:50": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_closest:60": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_closest:70": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_closest:80": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_closest:90": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_closest:100": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_in_range:10": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_in_range:20": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_in_range:30": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_in_range:40": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_in_range:50": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_in_range:60": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_in_range:70": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_in_range:80": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_in_range:90": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "four_sum_in_range:100": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "knapsack:10": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "knapsack:20": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "knapsack:30": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "knapsack:40": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "knapsack:50": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "knapsack:60": {
+      "inspection_field": "name",
+      "row_count": 59,
+      "unique_names": 59,
+      "duplicate_name_rows": 0
+    },
+    "knapsack:70": {
+      "inspection_field": "name",
+      "row_count": 11,
+      "unique_names": 11,
+      "duplicate_name_rows": 0
+    },
+    "lcs:10": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "lcs:20": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "lcs:30": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "lcs:40": {
+      "inspection_field": "name",
+      "row_count": 49,
+      "unique_names": 49,
+      "duplicate_name_rows": 0
+    },
+    "lis:10": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "lis:20": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "lis:30": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "lis:40": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "lis:50": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "lis:60": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "lis:70": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "lis:80": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "lis:90": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "lis:100": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "max_subarray:10": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "max_subarray:20": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "max_subarray:30": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "max_subarray:40": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "max_subarray:50": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "max_subarray:60": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "max_subarray:70": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "max_subarray:80": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "max_subarray:90": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "max_subarray:100": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "sorting:10": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "sorting:20": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "sorting:30": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "sorting:40": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "sorting:50": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "sorting:60": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "sorting:70": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "sorting:80": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "sorting:90": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "sorting:100": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "subset_sum:10": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "subset_sum:20": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "subset_sum:30": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "subset_sum:40": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "subset_sum:50": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "subset_sum:60": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "subset_sum:70": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "subset_sum:80": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "subset_sum:90": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "subset_sum:100": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "three_sum_in_range:10": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "three_sum_in_range:20": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "three_sum_in_range:30": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "three_sum_in_range:40": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "three_sum_in_range:50": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "three_sum_in_range:60": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "three_sum_in_range:70": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "three_sum_in_range:80": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "three_sum_in_range:90": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "three_sum_in_range:100": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "two_sum_closest:10": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "two_sum_closest:20": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "two_sum_closest:30": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "two_sum_closest:40": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "two_sum_closest:50": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "two_sum_closest:60": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "two_sum_closest:70": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "two_sum_closest:80": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "two_sum_closest:90": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    },
+    "two_sum_closest:100": {
+      "inspection_field": "name",
+      "row_count": 64,
+      "unique_names": 64,
+      "duplicate_name_rows": 0
+    }
+  },
+  "curriculum_pairs_with_count_mismatch": {},
+  "training_pairs_below_valid_input_min": {
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:knapsack:60": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 27,
+      "output_rows": 27,
+      "input_distinct_names": 10,
+      "rows_missing_to_target": 5,
+      "rows_dropped": 0,
+      "expected_min_input_rows": 32
+    },
+    "nvidia_llama_3_1_nemotron_ultra_253b_v1:lcs:40": {
+      "model_key": "nvidia_llama_3_1_nemotron_ultra_253b_v1",
+      "input_rows": 17,
+      "output_rows": 17,
+      "input_distinct_names": 6,
+      "rows_missing_to_target": 15,
+      "rows_dropped": 0,
+      "expected_min_input_rows": 32
+    },
+    "qwen_qwen_235b:knapsack:70": {
+      "model_key": "qwen_qwen_235b",
+      "input_rows": 11,
+      "output_rows": 11,
+      "input_distinct_names": 8,
+      "rows_missing_to_target": 21,
+      "rows_dropped": 0,
+      "expected_min_input_rows": 32
+    }
+  },
+  "output_files": {
+    "curriculum_flat": "/home/brianyuan/new_complexity/dataset/curriculum_test_set.flat.jsonl",
+    "training_flat": "/home/brianyuan/new_complexity/dataset/training_rows.flat.jsonl"
+  }
+}

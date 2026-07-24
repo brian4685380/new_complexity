@@ -1,0 +1,114 @@
+model:
+    model_name: "nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1"
+testing:
+    dataset_path: "test_datasets"
+    flat_dataset_path: "dataset/curriculum_test_set.flat.jsonl"
+    inference_algorithm_list: [
+        "sorting",
+        "max_subarray",
+        "coin_change",
+        "two_sum_closest",
+        "three_sum_in_range",
+        "subset_sum",
+        "four_sum",
+        "four_sum_in_range",
+        "lis",
+        "lcs",
+        "knapsack",
+        "four_sum_closest"
+    ]
+    prompt_type: "thinking_prompt"
+    # prompt_type: "immediate_answer_prompt"
+    batch_size: 32
+    max_new_tokens: 16384
+    temperature: 0.0
+    top_p: 1.0
+    max_model_len: 16384
+    gpu_mem_util: 0.90
+    dtype: "bfloat16"
+    gpu_id: 1
+    log_dir: "logs"
+    system_prompt: "Please solve the following algorithmic problem without using programming languages."
+    len_min: 10
+    len_max: 100
+    idx_min: 0
+    idx_max: 7
+    repetition_penalty: 1.1
+
+training:
+    dataset_path: "dataset/training_rows.flat.jsonl"
+    output_dir: "./curriculum_lora/"
+    gpu_id: 1
+    learning_rate: 2e-4
+    batch_size: 1
+    grad_accum: 16
+    epochs: 4 
+    max_seq_len: 16384
+    assistant_only_loss: true
+    train_mode: "curriculum"
+    prompt_field: "prompt"
+    difficulty_path: "/home/brianyuan/p-llm-complexity/difficulty.json"
+    include_algorithms: [
+        "sorting",
+        "subset_sum",
+        "lcs",
+        "knapsack" ,
+        "four_sum_closest" ,
+        "max_subarray" ,
+        "coin_change" ,
+        "two_sum_closest" ,
+        "four_sum" ,
+        "four_sum_in_range" 
+    ]
+    exclude_algorithms: [
+        "lis" ,
+        "three_sum_in_range"
+    ]
+    include_model_families: [qwen]
+    exclude_model_families: []
+    include_model_keys: []
+    exclude_model_keys: []
+    include_model_sizes: []
+    exclude_model_sizes: []
+    include_model_names: []
+    exclude_model_names: []
+    include_model_dirs: []
+    exclude_model_dirs: []
+    len_min: -1
+    len_max: 100
+    idx_min: -1
+    idx_max: -1
+    lr_scheduler: "cosine"
+    warmup_ratio: 0.03
+    warmup_steps: 0
+    seed: 42
+    system_prompt: "Please solve the following algorithmic problem without using programming languages."
+    tau0: 0.15
+    tau1: 2.0
+    epsilon: 0.05
+    wandb_mode: "online"
+
+full_training:
+    output_dir: "./runs/full_finetune/curriculum"
+    difficulty_path: "difficulty.json"
+    learning_rate: 2e-4
+    batch_size: 1
+    grad_accum: 8
+    epochs: 4
+    max_seq_len: 16384
+    assistant_only_loss: true
+    gradient_checkpointing: true
+    gradient_checkpointing_use_reentrant: false
+    torch_dtype: "bfloat16"
+    bf16: true
+    fp16: false
+    optim: "adamw_bnb_8bit"
+    weight_decay: 0.0
+    max_grad_norm: 1.0
+    attn_implementation: "auto"
+    wandb_mode: "online"
+
+wandb:
+    project: "p-llm-complexity"
+    entity: "brian4685380-national-taiwan-university"
+    name: "random order"

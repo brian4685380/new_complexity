@@ -26,16 +26,22 @@ PROJECT_DIR="${PROJECT_DIR:-${SLURM_SUBMIT_DIR:-$PWD}}"
 MODEL_NAME="${MODEL_NAME:-nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1}"
 TRAIN_DATASET="${TRAIN_DATASET:-${PROJECT_DIR}/dataset/training_rows.flat.jsonl}"
 TEST_DATASET="${TEST_DATASET:-${PROJECT_DIR}/dataset/curriculum_test_set.flat.jsonl}"
-OUTPUT_ROOT="${OUTPUT_ROOT:-${PROJECT_DIR}/nchc_runs}"
 WANDB_MODE="${WANDB_MODE:-offline}"
 
 # Shared training settings. These can all be overridden through sbatch --export.
+# Give each hyperparameter configuration a short, filesystem-safe name.
+# Change this value here, or submit with --export=ALL,RUN_TAG=my_experiment.
+RUN_TAG="${RUN_TAG:-lr2e-4_bs1_ga16_ep4}"
+# Change this value to run another seed, or submit with --export=ALL,SEED=123.
+SEED="${SEED:-42}"
 EPOCHS="${EPOCHS:-4}"
 LEARNING_RATE="${LEARNING_RATE:-2e-4}"
 BATCH_SIZE="${BATCH_SIZE:-1}"
 GRAD_ACCUM="${GRAD_ACCUM:-16}"
 MAX_SEQ_LEN="${MAX_SEQ_LEN:-16384}"
-SEED="${SEED:-42}"
+
+# Results from all five array tasks are grouped by run tag and then seed.
+OUTPUT_ROOT="${OUTPUT_ROOT:-${PROJECT_DIR}/nchc_runs/${RUN_TAG}/seed_${SEED}}"
 
 # Shared evaluation settings.
 EVAL_BATCH_SIZE="${EVAL_BATCH_SIZE:-32}"
@@ -122,6 +128,8 @@ MERGE_TMP_DIR="${SLURM_TMPDIR:-/tmp}/${USER}/lora_curricula_${SLURM_JOB_ID:-manu
 mkdir -p "${ADAPTER_DIR}" "${EVAL_LOG_DIR}" "${MERGE_TMP_DIR}"
 
 echo "Experiment:       ${EXPERIMENT}"
+echo "Run tag:          ${RUN_TAG}"
+echo "Seed:             ${SEED}"
 echo "Project:          ${PROJECT_DIR}"
 echo "Model:            ${MODEL_NAME}"
 echo "Training data:    ${TRAIN_DATASET}"
@@ -146,7 +154,7 @@ train_args=(
     --max_seq_len "${MAX_SEQ_LEN}"
     --seed "${SEED}"
     --wandb_mode "${WANDB_MODE}"
-    --wandb_name "nchc_${EXPERIMENT}"
+    --wandb_name "nchc_${RUN_TAG}_${EXPERIMENT}_seed_${SEED}"
 )
 
 echo "Starting LoRA training at $(date --iso-8601=seconds)"

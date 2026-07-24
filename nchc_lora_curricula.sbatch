@@ -6,13 +6,13 @@
 #   sbatch -A YOUR_ID --export=ALL,MODEL_NAME=Qwen/Qwen3-1.7B,WANDB_MODE=online nchc_lora_curricula.sbatch
 
 #SBATCH --job-name=lora-curricula
-#SBATCH --partition=gp1d
+#SBATCH --partition=dev
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=8
 #SBATCH --gres=gpu:1
 #SBATCH --mem=64G
-#SBATCH --time=1-00:00:00
+#SBATCH --time=04:00:00
 #SBATCH --array=0-4%5
 # Slurm opens these files before the script starts, so keep them in the
 # submission directory rather than in a directory that may not exist yet.
@@ -46,8 +46,26 @@ GPU_MEM_UTIL="${GPU_MEM_UTIL:-0.90}"
 mkdir -p "${PROJECT_DIR}/slurm_logs" "${OUTPUT_ROOT}"
 cd "${PROJECT_DIR}"
 
-if ! command -v uv >/dev/null 2>&1; then
-    echo "ERROR: uv is not available. Load your NCHC Python/uv environment before sbatch." >&2
+# Batch shells often omit user-level executable directories from PATH.
+export PATH="${HOME}/.local/bin:${HOME}/.cargo/bin:${PATH}"
+
+# Activate the environment prepared by `uv sync` on the login node. If uv is
+# available, continue to let it enforce uv.lock; otherwise use that environment's
+# Python directly (no network access or package installation is needed).
+if [[ -f "${PROJECT_DIR}/.venv/bin/activate" ]]; then
+    # shellcheck disable=SC1091
+    source "${PROJECT_DIR}/.venv/bin/activate"
+    echo "Activated ${PROJECT_DIR}/.venv"
+fi
+
+if command -v uv >/dev/null 2>&1; then
+    PYTHON_RUNNER=(uv run --frozen)
+elif [[ -x "${PROJECT_DIR}/.venv/bin/python" ]]; then
+    PYTHON_RUNNER=("${PROJECT_DIR}/.venv/bin/python")
+    echo "uv executable not found; using the uv-created .venv directly."
+else
+    echo "ERROR: neither uv nor ${PROJECT_DIR}/.venv/bin/python is available." >&2
+    echo "Run 'uv sync --frozen' once from the project directory before submitting." >&2
     exit 1
 fi
 
@@ -114,7 +132,7 @@ echo "CUDA devices:     ${CUDA_VISIBLE_DEVICES:-assigned by Slurm}"
 nvidia-smi || true
 
 train_args=(
-    uv run --frozen train.py
+    "${PYTHON_RUNNER[@]}" train.py
     --dataset_path "${TRAIN_DATASET}"
     --model_name "${MODEL_NAME}"
     --output_dir "${ADAPTER_DIR}"
@@ -137,7 +155,7 @@ echo "Starting LoRA training at $(date --iso-8601=seconds)"
 # train.py and eval.py run in separate processes, so training GPU memory is
 # released before eval.py temporarily merges the adapter and starts vLLM.
 echo "Starting evaluation at $(date --iso-8601=seconds)"
-uv run --frozen eval.py \
+"${PYTHON_RUNNER[@]}" eval.py \
     --dataset_path "${TEST_DATASET}" \
     --model_name "${MODEL_NAME}" \
     --lora_checkpoint "${ADAPTER_DIR}" \

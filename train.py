@@ -23,6 +23,36 @@ from training_data import build_chat_messages, load_training_rows, parse_csv_lis
 PairKey = Tuple[str, int]
 
 
+def ensure_assistant_training_chat_template(tokenizer, *, assistant_only_loss: bool) -> None:
+    """Ensure TRL can build assistant-token masks for chat SFT."""
+    if not assistant_only_loss or "{% generation %}" in (tokenizer.chat_template or ""):
+        return
+
+    from trl.chat_template_utils import get_training_chat_template
+
+    try:
+        patched_template = get_training_chat_template(tokenizer)
+    except ValueError as exc:
+        # Nemotron Nano uses a customized Llama 3 template. TRL cannot match
+        # that template by exact string, even though the tokenizer uses the
+        # standard Llama 3 header/eot special tokens. Its supplied Llama 3
+        # training template adds the generation markers required for masks.
+        vocab = tokenizer.get_vocab()
+        llama3_tokens = {"<|start_header_id|>", "<|end_header_id|>", "<|eot_id|>"}
+        if not llama3_tokens.issubset(vocab):
+            raise ValueError(
+                "assistant_only_loss requires a chat template with Jinja generation markers, "
+                "and this tokenizer is not recognized as Llama 3 compatible."
+            ) from exc
+        from trl.chat_template_utils import llama3_training_chat_template
+
+        patched_template = llama3_training_chat_template
+        print("[TOKENIZER] Using TRL's Llama 3 training chat template for assistant-only loss.")
+
+    if patched_template is not None:
+        tokenizer.chat_template = patched_template
+
+
 def maybe_set_cuda_visible_devices(gpu_id: str | None) -> str | None:
     if gpu_id is None:
         return None
@@ -679,6 +709,7 @@ def main() -> None:
     tok = AutoTokenizer.from_pretrained(args.model_name, trust_remote_code=True)
     if tok.pad_token is None and tok.eos_token is not None:
         tok.pad_token = tok.eos_token
+    ensure_assistant_training_chat_template(tok, assistant_only_loss=args.assistant_only_loss)
 
     model = AutoModelForCausalLM.from_pretrained(
         args.model_name,

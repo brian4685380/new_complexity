@@ -34,6 +34,9 @@ WANDB_MODE="${WANDB_MODE:-offline}"
 RUN_TAG="${RUN_TAG:-lr2e-4_bs1_ga16_ep4}"
 # Change this value to run another seed, or submit with --export=ALL,SEED=123.
 SEED="${SEED:-42}"
+# Curriculum ending temperature; passed to train.py as --tau1.
+# Change it here, or submit with --export=ALL,TAU=1.0.
+TAU="${TAU:-2.0}"
 EPOCHS="${EPOCHS:-4}"
 LEARNING_RATE="${LEARNING_RATE:-2e-4}"
 BATCH_SIZE="${BATCH_SIZE:-1}"
@@ -130,6 +133,7 @@ mkdir -p "${ADAPTER_DIR}" "${EVAL_LOG_DIR}" "${MERGE_TMP_DIR}"
 echo "Experiment:       ${EXPERIMENT}"
 echo "Run tag:          ${RUN_TAG}"
 echo "Seed:             ${SEED}"
+echo "Tau1:             ${TAU}"
 echo "Project:          ${PROJECT_DIR}"
 echo "Model:            ${MODEL_NAME}"
 echo "Training data:    ${TRAIN_DATASET}"
@@ -153,6 +157,7 @@ train_args=(
     --grad_accum "${GRAD_ACCUM}"
     --max_seq_len "${MAX_SEQ_LEN}"
     --seed "${SEED}"
+    --tau1 "${TAU}"
     --wandb_mode "${WANDB_MODE}"
     --wandb_name "nchc_${RUN_TAG}_${EXPERIMENT}_seed_${SEED}"
 )
